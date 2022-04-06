@@ -13,8 +13,8 @@
     "start": "node ./main.js"
   },
   "engines": {
-    "node": ">= 14.15.0",
-    "npm": ">= 4.4.0"
+    "node": " 14.15.0",
+    "npm": "4.4.0"
   },
   "author": "",
   "license": "ISC"
