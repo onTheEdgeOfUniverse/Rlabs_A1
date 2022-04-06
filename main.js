@@ -91,4 +91,4 @@ app.get("/sort", (req, res) => {
   console.log(Magzines);
 });
 console.log("sample magzine", Magzines[0]);
-app.listen(8081);
+app.listen(process.env.PORT|| 8081);
