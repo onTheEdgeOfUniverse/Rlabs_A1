@@ -11,8 +11,6 @@
   "devDependencies": {},
   "scripts": {
     "start": "node ./main.js",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install"
   },
   "engines": {
     "node": " 14.15.0"
