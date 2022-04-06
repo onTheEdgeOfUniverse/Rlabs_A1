@@ -40,7 +40,7 @@ app.get("/magzines", (req, res) => {
     }
   } else if (req.query.email) {
     res.header("Content-Type", "application/json");
-    for (let p of magzines) {
+    for (let p of Magzines) {
       const mail = p.authors.split(",");
       for (let x of mail) {
         const email = x.split("-")[1];
