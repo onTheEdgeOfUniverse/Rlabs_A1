@@ -9,5 +9,5 @@
   * authors Goto https://rlabs-a1.herokuapp.com/authors?email=ferdinand@echocat.org
   * magzines Goto https://rlabs-a1.herokuapp.com/magzines?email=mueller@echocat.org
 -to sort magzines and authors
-   * Goto https://rlabs-a1.herokuapp.com/sort
+  * Goto https://rlabs-a1.herokuapp.com/sort
    
