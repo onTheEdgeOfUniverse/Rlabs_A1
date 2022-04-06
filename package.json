@@ -1,0 +1,17 @@
+{
+  "name": "asessment_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.3",
+    "csv-parser": "^3.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"nodemon ./main.js" 
+    },
+  "author": "",
+  "license": "ISC"
+}
