@@ -91,5 +91,5 @@ app.get("/sort", (req, res) => {
   console.log(Magzines);
 });
 console.log("sample magzine", Magzines[0]);
-const port=process.env.PORT ||5000
+const port=process.env.PORT || 5000
 app.listen(port);
