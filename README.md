@@ -1,6 +1,6 @@
 # Rlabs_A1
 - to get  
-...authors goto https://rlabs-a1.herokuapp.com/authors .⋅⋅
+* authors goto https://rlabs-a1.herokuapp.com/authors 
 ...magzines goto https://rlabs-a1.herokuapp.com/magzines .⋅⋅
 - to query by isbn
 ...authors goto https://rlabs-a1.herokuapp.com/magzines?isbn=5554-5545-4518.⋅⋅
