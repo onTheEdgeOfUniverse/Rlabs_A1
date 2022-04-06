@@ -38,6 +38,19 @@ app.get("/magzines", (req, res) => {
       }
       //   console.log(p.isbn);
     }
+  } else if (req.query.email) {
+    res.header("Content-Type", "application/json");
+    for (let p of magzines) {
+      const mail = p.authors.split(",");
+      for (let x of mail) {
+        const email = x.split("-")[1];
+        if (email === req.query.email) {
+          res.send(JSON.stringify(p, null, 4));
+        }
+      }
+
+      //   console.log(p.isbn);
+    }
   } else {
     res.header("Content-Type", "application/json");
     res.send(JSON.stringify(Magzines, null, 4));
@@ -84,14 +97,12 @@ app.get("/sort", (req, res) => {
     };
   }
   Magzines.sort(GetSortOrder("title"));
-  results.sort(GetSortOrder("title"))
+  results.sort(GetSortOrder("title"));
   res.header("Content-Type", "application/json");
   res.send(JSON.stringify(Magzines.concat(results), 4));
-//   res.send(JSON.stringify(results, null, 4));
+  //   res.send(JSON.stringify(results, null, 4));
   console.log(Magzines);
 });
 console.log("sample magzine", Magzines[0]);
-const port=process.env.PORT || 5000
-app.listen(port,()=>{
-console.log('listening on ${port}')
-});
+const port = process.env.PORT || 5000;
+app.listen(port);
